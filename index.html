@@ -3,17 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe.com</title>
+    <title>Recipe</title>
     <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .slider .indicators .indicator-item.active{
+            background-color: #e65100;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <nav class="white">
+            <div class="container">
+                <a href="">
+                    <img src="img/logo.png" width="150px" alt="">
+                </a>
+                <a href="#sidenav" class="sidenav-trigger right orange-text text-darken-4">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="orange-text text-darken-4" href="">Home</a></li>
+                    <li><a class="orange-text text-darken-4" href="">Cakes</a></li>
+                    <li><a class="orange-text text-darken-4" href="">Soups</a></li>
+                    <li><a class="orange-text text-darken-4" href="">Chicken</a></li>
+                    <li><a class="orange-text text-darken-4" href="">Customers</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="sidenav">
+            <li><a class="orange-text text-darken-4" href="">Home</a></li>
+            <li><a class="orange-text text-darken-4" href="">Cakes</a></li>
+            <li><a class="orange-text text-darken-4" href="">Soups</a></li>
+            <li><a class="orange-text text-darken-4" href="">Chicken</a></li>
+            <li><a class="orange-text text-darken-4" href="">Customers</a></li>
+        </ul>
+        <div class="slider">
+            <ul class="slides">
+                <li><img class="responsive-img" src="img/cake_fruit.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/shrimp_soup.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/chicken_3.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/dessert_chocolate.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/ginger_cake.webp" alt=""></li>
+            </ul>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 <script src="js/jquery.js"></script>
 <script src="js/materialize.js"></script>
 <script>
     $(document).ready(function(){
-    
+    $('.slider').slider();
+    $('.sidenav').sidenav();
     })
 </script>
 </html>
